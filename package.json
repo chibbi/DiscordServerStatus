@@ -1,0 +1,28 @@
+{
+  "name": "discordserverstatus",
+  "version": "1.0.0",
+  "description": "a Discord Bot, which creates basic information on your server about your Minecraft Server (like: status, online players)",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chibbi/DiscordServerStatus.git"
+  },
+  "keywords": [
+    "minecraft",
+    "server",
+    "api",
+    "discord"
+  ],
+  "author": "chibbi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chibbi/DiscordServerStatus/issues"
+  },
+  "homepage": "https://github.com/chibbi/DiscordServerStatus#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}

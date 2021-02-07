@@ -1,0 +1,19 @@
+{
+    "apioptions": {
+        "domain": "eu.mc-api.net",
+        "path": "/v3/server/ping/YOUR-IP"
+    },
+    "discordoptions": {
+        "botToken": "YOUR-BOT-TOKEN",
+        "serverid": "YOUR-SERVER-ID",
+        "onlinetextid": "YOUR-ONLINE-VOICE-CHANNEL-ID",
+        "statustextid": "YOUR-STATUS-VOICE-CHANNEL-ID"
+    },
+    "discordchannelnames": {
+        "onlinetextname": "Online Players: ",
+        "statustextname": {
+            "online": "Server status: ONLINE",
+            "offline": "Server status: offline"
+        }
+    }
+}

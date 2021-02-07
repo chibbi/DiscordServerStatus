@@ -33,3 +33,15 @@ req.on('error', error => {
 });
 
 req.end();
+
+var url = 'http://myexternalip.com/raw';
+http.get(url, function(r) {
+    r.setEncoding('utf8');
+    r.on('data', (chunk) => {
+        client.channels.fetch(argopts.discordoptions.iptextid)
+            .then(channel => {
+                channel.setName(argopts.discordchannelnames.iptextname + chunk);
+            });
+        console.log("Updated Server Ip to: " + chunk);
+    });
+});

@@ -13,17 +13,12 @@ const options = {
 };
 client.once('ready', () => {
     console.log('Discord Bot up and running!');
-    var url = 'http://myexternalip.com/raw';
-    http.get(url, function(r) {
-        r.setEncoding('utf8');
-        r.on('data', (chunk) => {
-            client.channels.fetch(argopts.discordoptions.iptextid)
-                .then(channel => {
-                    channel.setName(argopts.discordchannelnames.iptextname + chunk);
-                });
-            console.log("Updated Server Ip to: " + chunk);
+    client.channels.fetch(argopts.discordoptions.iptextid)
+        .then(channel => {
+            channel.setName(argopts.discordchannelnames.iptextname + argopts.apioptions.ip);
         });
-    });
+    console.log("Updated Server Ip to: " + argopts.apioptions.ip);
+
 });
 
 client.login(argopts.discordoptions.bottoken);

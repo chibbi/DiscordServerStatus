@@ -8,7 +8,7 @@ const argopts = JSON.parse(fs.readFileSync("options.json", "utf8"));
 const options = {
     hostname: argopts.apioptions.domain,
     port: 443,
-    path: argopts.apioptions.path + "/" + argopts.apioptions.ip,
+    path: argopts.apioptions.path + argopts.apioptions.ip,
     method: 'GET'
 };
 client.once('ready', () => {

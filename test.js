@@ -33,7 +33,7 @@ req.on('error', error => {
 });
 
 req.end();
-
+/*
 var url = 'http://myexternalip.com/raw';
 http.get(url, function(r) {
     r.setEncoding('utf8');
@@ -45,3 +45,4 @@ http.get(url, function(r) {
         console.log("Updated Server Ip to: " + chunk);
     });
 });
+*/

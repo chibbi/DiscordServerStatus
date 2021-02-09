@@ -18,7 +18,7 @@ process.on('beforeExit', (code) => {
 });
 
 process.on('SIGTERM', () => {
-    logAndDiscord('Bot shutdown because of UserInput (SIGINT)');
+    logAndDiscord('Bot shutdown because of OS (SIGTERM)');
     setTimeout(() => {
         process.exit()
     }, 100);

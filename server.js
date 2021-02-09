@@ -32,11 +32,11 @@ process.on('SIGINT', function() {
 
 client.once('ready', () => {
     logAndDiscord('Discord Bot up and running!');
-    /*client.channels.fetch(argopts.discordoptions.iptextid)
+    client.channels.fetch(argopts.discordoptions.iptextid)
         .then(channel => {
             channel.setName(argopts.discordchannelnames.iptextname + argopts.apioptions.ip);
         });
-    logAndDiscord("Updated Server Ip to: " + argopts.apioptions.ip);*/
+    logAndDiscord("Updated Server Ip to: " + argopts.apioptions.ip);
 
 });
 
@@ -95,5 +95,5 @@ updateServerStatus = () => {
 
     req.end();
 }
-//setTimeout(updateServerStatus, 2500);
-//setInterval(updateServerStatus, 600000);
+setTimeout(updateServerStatus, 2500);
+setInterval(updateServerStatus, 600000);

@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/chibbi/DiscordServerStatus#readme",
   "dependencies": {
-    "discord.js": "^13.6.0"
+    "discord.js": "^12.5.3"
   }
 }
